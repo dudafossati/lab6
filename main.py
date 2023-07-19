@@ -31,13 +31,6 @@ def encode(password):
     return encoded_password
 
 
-def decode(encoded_password):
-    decoded_password = ""
-    for digit in encoded_password:
-        # Shifting each digit down by 3 numbers to get the original digit
-        original_digit = (int(digit) - 3) % 10
-        decoded_password += str(original_digit)
-    return decoded_password
 
 
 if __name__ == "__main__":
