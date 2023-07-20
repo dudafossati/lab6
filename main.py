@@ -1,5 +1,7 @@
 def main():
     while True:
+        print("Menu")
+        print("-------------")
         print("1. Encode Password")
         print("2. Decode Password")
         print("3. Quit")
