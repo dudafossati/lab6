@@ -21,6 +21,18 @@ def main():
         else:
             print("Invalid choice. Please try again.")
 
+def decode(string):
+    new = ""
+    for num in string:
+        if (int(num) - 3) >= 0:  ## checks if the current num in encode string when subtracted 3 is greater than or equal to 0
+            new = new + str((int(num) - 3))
+        elif (int(num) - 3) == -3:
+            new = new + str(7)
+        elif (int(num) - 3) == -2:
+            new = new + str(8)
+        elif (int(num) - 3) == -1:
+            new = new + str(9)
+    return new
 
 def encode(password):
     encoded_password = ""
